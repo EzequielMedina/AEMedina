@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/aemedina/static/css/main.0340d5e9.chunk.css",
+    "main.js": "/aemedina/static/js/main.43215a1e.chunk.js",
+    "main.js.map": "/aemedina/static/js/main.43215a1e.chunk.js.map",
+    "runtime-main.js": "/aemedina/static/js/runtime-main.6b27ed9b.js",
+    "runtime-main.js.map": "/aemedina/static/js/runtime-main.6b27ed9b.js.map",
+    "static/js/2.2ebf7d4e.chunk.js": "/aemedina/static/js/2.2ebf7d4e.chunk.js",
+    "static/js/2.2ebf7d4e.chunk.js.map": "/aemedina/static/js/2.2ebf7d4e.chunk.js.map",
+    "static/js/3.13e72b66.chunk.js": "/aemedina/static/js/3.13e72b66.chunk.js",
+    "static/js/3.13e72b66.chunk.js.map": "/aemedina/static/js/3.13e72b66.chunk.js.map",
+    "index.html": "/aemedina/index.html",
+    "static/css/main.0340d5e9.chunk.css.map": "/aemedina/static/css/main.0340d5e9.chunk.css.map",
+    "static/js/2.2ebf7d4e.chunk.js.LICENSE.txt": "/aemedina/static/js/2.2ebf7d4e.chunk.js.LICENSE.txt",
+    "static/media/CalculadoraJS.1617d83a.jpg": "/aemedina/static/media/CalculadoraJS.1617d83a.jpg",
+    "static/media/Medina_Ezequiel_CV_2020.2858106d.pdf": "/aemedina/static/media/Medina_Ezequiel_CV_2020.2858106d.pdf",
+    "static/media/css3.5227db3a.png": "/aemedina/static/media/css3.5227db3a.png",
+    "static/media/flutter.c01689b8.png": "/aemedina/static/media/flutter.c01689b8.png",
+    "static/media/html5.b7d94634.png": "/aemedina/static/media/html5.b7d94634.png",
+    "static/media/img_30298_programhtml.1a79a6f9.jpg": "/aemedina/static/media/img_30298_programhtml.1a79a6f9.jpg",
+    "static/media/js.0dd6a868.png": "/aemedina/static/media/js.0dd6a868.png",
+    "static/media/python.9431343c.png": "/aemedina/static/media/python.9431343c.png",
+    "static/media/yo_adobespark.2d2f94f7.png": "/aemedina/static/media/yo_adobespark.2d2f94f7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b27ed9b.js",
+    "static/js/2.2ebf7d4e.chunk.js",
+    "static/css/main.0340d5e9.chunk.css",
+    "static/js/main.43215a1e.chunk.js"
+  ]
+}
