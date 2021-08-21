@@ -17,9 +17,10 @@ import '../index.css';
 
 
 
+
 const Technolofies = (theme) => {
-    const classes = useStyles();
-    const skills = [
+     const classes = useStyles();
+     const skills = [
         {
             src: sql,
             title: "Microsoft Sql server",
@@ -68,15 +69,16 @@ const Technolofies = (theme) => {
         
     ]
     
+    
 
     return(
-    <Timeline align="left" className={classes.timeline}>
+    <Timeline align="alternate" className={classes.timeline}>
         {skills.map(({src, title, start}, index) => (
                 <TimelineItem key={index}>
-                    <TimelineSeparator>
+                    <TimelineSeparator className={classes.separador}>
                         
                         <img src={src} alt={title} className={classes.customlogo}></img>
-                        <TimelineConnector/>
+                        <TimelineConnector className={classes.connector}/>
                     </TimelineSeparator>
                     <TimelineContent >
                         <Paper elevation={5} className={classes.paper}>
@@ -95,20 +97,32 @@ const Technolofies = (theme) => {
 const useStyles = makeStyles((theme) => ({
   customlogo:{
     width: "25px",
+    [theme.breakpoints.down("sm")]:{
+         width: "35px",
+         padding: "15px",
+         
+         
+        }
     
     },
     paper:{
         
         padding: "6px 16px",
-        
-    },
-    timeline:{
-        
         [theme.breakpoints.down("sm")]:{
-            align: "left",
+            textAlign: "center",
             
         }
-    }
+        
+    },
+    
+    connector:{
+        
+        [theme.breakpoints.down("sm")]:{
+            display: "none",
+            
+        }       
+    },
+    
 }))
 
 export default Technolofies
