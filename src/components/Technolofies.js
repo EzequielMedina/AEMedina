@@ -70,7 +70,7 @@ const Technolofies = (theme) => {
     
 
     return(
-    <Timeline align="alternate" className={classes.timeline}>
+    <Timeline align="left" className={classes.timeline}>
         {skills.map(({src, title, start}, index) => (
                 <TimelineItem key={index}>
                     <TimelineSeparator>
