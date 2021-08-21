@@ -6,7 +6,7 @@ const mockData = [
     {
         title: "Calculadora JS",
         image: CalculadoraJS,
-        repositorio: ".Calculadora2.0/index.html",
+        repositorio: ".Calculadora/index.html",
         video: "",
     }
 
