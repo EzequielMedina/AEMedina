@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import { makeStyles, Typography } from '@material-ui/core';
+import { IconButton, Link, makeStyles, Typography } from '@material-ui/core';
 import imagen from "../img/img_30298_programhtml.jpg";
 import '../index.css';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 const HomePage = ({title,id}) => {
     const classes = useStyles();
     return(
@@ -25,6 +26,14 @@ const HomePage = ({title,id}) => {
                 <Typography variant="h4"  class="textoheader">
                 <h3>I am a programmer</h3>
                 </Typography>
+                <div>
+                <IconButton edge="end" className={classes.menuButton} onClick={()=>("https://github.com/EzequielMedina" )}>
+                  <GitHubIcon fontSize="large" />
+                </IconButton>
+                <IconButton edge="end" className={classes.menuButton} onClick={()=>("https://github.com/EzequielMedina" )}>
+                  <LinkedInIcon fontSize="large" color="#fff" />
+                </IconButton>
+              </div>
             </div>
             
         </div>
