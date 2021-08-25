@@ -4,6 +4,7 @@ import { Card, CardContent, CardMedia, Grid,  makeStyles, Typography, Link,Butto
 import mockData from '../monckData';
 
 
+
 const Portafile = ({title,id, gray}) => {
     const classes = useStyles();
     return(
@@ -17,7 +18,7 @@ const Portafile = ({title,id, gray}) => {
                     return (
                       <Grid item key={index} xs={12} ms={6} md={4}>
                         <Card className={classes.card}>
-                          <CardMedia image={image} titulo="caratula" className={classes.caratula} />
+                          <CardMedia image={image} titulo="caratula" className={classes.caratula } />
                           <CardContent className={classes.content}>
                             <Button vartian="contained" className={classes.button}>
                               <Link href={repositorio} color="primary" target="_blank" reel="noopener noreferrer" > 
@@ -53,21 +54,26 @@ const useStyles = makeStyles((theme) => ({
     },
     grid:{
       marginTop: theme.spacing(10),
+      
     },
     card:{
       maxWidth: 345,
       minHeight: 275,
       margin: theme.spacing(3),
+      
     },
     caratula:{
       height: 0,
-      paddingTop: "56.25%", //16:9
+      paddingTop: "56.25%",//16:9
+      backgroundSize:"100% 100%",
+      backgroundRepeat: "no-repeat",
 
     },
     content:{
       display: "flex",
       justifyContent: "center",
-      alignItems: "center"
+      alignItems: "center",
+      
     },
     button:{
       backgroundColor: "#4286f4c0",
