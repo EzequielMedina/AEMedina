@@ -1,6 +1,9 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Grid, Link, makeStyles, Typography } from '@material-ui/core';
+import { Card, CardContent, CardMedia, Grid,  makeStyles, Typography, Link,Button } from '@material-ui/core';
+
 import mockData from '../monckData';
+
+
 const Portafile = ({title,id, gray}) => {
     const classes = useStyles();
     return(
@@ -9,18 +12,23 @@ const Portafile = ({title,id, gray}) => {
               <Typography variant="h3">{title}</Typography>
               <Grid container className={classes.grid}>
                 {
-                  mockData.map(({title, image, repositorio}, index)=>(
-                    <Grid item key={index} xs={12} ms={6} md={4}>
-                      <Card className={classes.card}>
-                        <CardMedia image={image} titulo="caratula" className={classes.caratula}/>
-                        <CardContent>
-                          <Link href={repositorio} color="primary" target="_blank" reel="noopener noreferrer">
-                            {title}
-                          </Link>
-                        </CardContent>
-                      </Card>
-                    </Grid>
-                  ))
+                  mockData.map(({title, image, repositorio}, index)=>{
+                    
+                    return (
+                      <Grid item key={index} xs={12} ms={6} md={4}>
+                        <Card className={classes.card}>
+                          <CardMedia image={image} titulo="caratula" className={classes.caratula} />
+                          <CardContent className={classes.content}>
+                            <Button vartian="contained" className={classes.button}>
+                              <Link href={repositorio} color="primary" target="_blank" reel="noopener noreferrer" > 
+                                {title}
+                                </Link>             
+                            </Button>
+                          </CardContent>
+                        </Card>
+                      </Grid>
+                    );
+                  })
                 }
               </Grid>
             </div>
@@ -29,6 +37,7 @@ const Portafile = ({title,id, gray}) => {
 }
 const useStyles = makeStyles((theme) => ({
     section:{
+      
       minHeight: "100vh",
       color: "#063891"
     },
@@ -53,9 +62,22 @@ const useStyles = makeStyles((theme) => ({
     caratula:{
       height: 0,
       paddingTop: "56.25%", //16:9
-      
-      
+
     },
+    content:{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+    },
+    button:{
+      backgroundColor: "#4286f4c0",
+      border: "#063891 solid 2px",
+      boxShadow: "6px 5px 10px #555",
+      fontSize: "12px",
+      fontWeight: "800",
+      background: "fff"
+      
+    }
   }))
 
 export default Portafile;

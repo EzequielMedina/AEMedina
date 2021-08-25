@@ -3,6 +3,7 @@ import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import imagen from "../img/img_30298_programhtml.jpg";
 import '../index.css';
+
 const HomePage = ({title,id}) => {
     const classes = useStyles();
     return(
