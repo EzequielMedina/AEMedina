@@ -26,6 +26,7 @@ const HomePage = ({title,id}) => {
                 <Typography variant="h4"  class="textoheader">
                 <h3>I am a programmer</h3>
                 </Typography>
+              
                 <div>
                 <IconButton edge="end"  className={classes.buttones} onClick={()=>window.open("https://github.com/EzequielMedina" )} >
                   <GitHubIcon fontSize="large" />

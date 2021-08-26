@@ -6,7 +6,7 @@ const Skills = ({title,id, gray}) => {
     return(
         <div className={`${classes.section} ${gray && classes.sectiondark}`}>
             <div className={classes.sectionContent} id={id}>
-              <Typography variant="h3">{title}</Typography>
+              <Typography variant="h3"className={classes.titulo} >{title}</Typography>
               <Technolofies/>
             </div>
         </div>
@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
         maxWidth:"80vw",
         margin: "0 auto",
         
+    },
+    titulo:{
+      textShadow: "6px 5px 10px #555"
     }
   }))
 

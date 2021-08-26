@@ -10,7 +10,7 @@ const Portafile = ({title,id, gray}) => {
     return(
         <div className={`${classes.section} ${gray && classes.sectiondark}`}>
             <div className={classes.sectionContent} id={id}>
-              <Typography variant="h3">{title}</Typography>
+            <Typography variant="h3"className={classes.titulo} >{title}</Typography>
               <Grid container className={classes.grid}>
                 {
                   mockData.map(({title, image, repositorio}, index)=>{
@@ -83,6 +83,9 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: "800",
       background: "fff"
       
+    },
+    titulo:{
+      textShadow: "6px 5px 10px #555"
     }
   }))
 

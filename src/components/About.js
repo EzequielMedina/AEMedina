@@ -1,14 +1,17 @@
 import React from 'react';
-import { Card, makeStyles, Typography, CardMedia, CardContent, CardActions, Button } from '@material-ui/core';
+import { Card, makeStyles, Typography, CardMedia, CardContent, CardActions, Button, Divider } from '@material-ui/core';
 import ezequiel from "../img/yo_adobespark.png";
 import TypeWriterEffect from "react-typewriter-effect";
-import Cv from "../assents/Medina_Ezequiel_CV_2020.pdf"
+import Cv from "../assents/Medina_Ezequiel_CV_2020.pdf";
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
 const About = ({title,id, gray}) => {
     const classes = useStyles();
     return(
         <div className={`${classes.section} ${gray && classes.sectiondark}`}>
             <div className={classes.sectionContent} id={id}>
-              <Typography variant="h3">{title}</Typography>
+              <Typography variant="h3"className={classes.titulo} >{title}</Typography>
               <Card className={classes.card}>
                 <Card className={classes.cardphoto}><CardMedia title="Picture" image={ezequiel} className={classes.cardMedina}></CardMedia></Card>
                 <CardContent className={classes.cardContent}>
@@ -25,10 +28,16 @@ const About = ({title,id, gray}) => {
                     startDelay={2500}
                     cursorColor="black"
                     typeSpeed={100}
+                    
                   />
-                  <Typography variant="h6" color="textSecondary">
-                    texto que nos describe
+                  <br></br>
+                  
+                  <Typography variant="h6">
+                    <WhatsAppIcon></WhatsAppIcon> WhatsApp: 3512504207<br></br>
+                    <InstagramIcon></InstagramIcon> Instagram: Ezemedinaaa <br></br>
+                    <SchoolTwoToneIcon></SchoolTwoToneIcon> Estudiante en Tecnicatura en programacion
                   </Typography>
+
                 </CardContent>
                 <CardActions>
                   <Button vartian="contained" className={classes.pdfButton}>
@@ -60,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card:{
       [theme.breakpoints.down("sm")]:{
-        height: "90vw", 
+        height: "100vw", 
       },
       height: "70vw",
       display: "flex",
@@ -89,8 +98,10 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(2),
       "& h6":{
         marginTop: theme.spacing(6),
+        fontWeight: "bold",
         [theme.breakpoints.down("sm")]:{
           display:"none",
+
         }
       }
     },
@@ -118,6 +129,12 @@ const useStyles = makeStyles((theme) => ({
         color: "tomato",
       }
     },
+    titulo:{
+      textShadow: "6px 5px 10px #555"
+    },
+
+
+   
   }))
 
 export default About;

@@ -9,7 +9,7 @@ const Contact = ({title,id, gray}) => {
     }
     return(
         <div className={`${classes.section} ${gray && classes.sectiondark}`}>
-            <Typography variant="h3">{title}</Typography>
+            <Typography variant="h3"className={classes.titulo} >{title}</Typography>
             <div className={classes.sectionContent} id={id}>
             
               <Paper class={classes.root}>
@@ -127,6 +127,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent:"center",
         alignItems:"right",
       },
+      
+    },
+    titulo:{
+      textShadow: "6px 5px 10px #555"
     }
     
   }))
