@@ -27,10 +27,10 @@ const HomePage = ({title,id}) => {
                 <h3>I am a programmer</h3>
                 </Typography>
                 <div>
-                <IconButton edge="end" className={classes.menuButton} onClick={()=>("https://github.com/EzequielMedina" )}>
+                <IconButton edge="end"  className={classes.buttones} onClick={()=>window.open("https://github.com/EzequielMedina" )} >
                   <GitHubIcon fontSize="large" />
                 </IconButton>
-                <IconButton edge="end" className={classes.menuButton} onClick={()=>("https://github.com/EzequielMedina" )}>
+                <IconButton edge="end"  className={classes.buttones}  onClick={()=>window.open("https://www.linkedin.com/in/ezequiel-medina-a570181a8/" )}>
                   <LinkedInIcon fontSize="large" color="#fff" />
                 </IconButton>
               </div>
@@ -78,9 +78,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "80vw",
     margin: "0 auto",
-    
-    
   },
+  buttones:{
+    paddingLeft: theme.spacing(2),
+  }
   
  
 }));
