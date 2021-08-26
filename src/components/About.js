@@ -33,12 +33,13 @@ const About = ({title,id, gray}) => {
                   <br></br>
                   
                   <Typography variant="h6">
-                    <WhatsAppIcon></WhatsAppIcon> WhatsApp: 3512504207<br></br>
-                    <InstagramIcon></InstagramIcon> Instagram: Ezemedinaaa <br></br>
+                    <WhatsAppIcon></WhatsAppIcon> 3512504207<br></br>
+                    <InstagramIcon></InstagramIcon> Ezemedinaaa <br></br>
                     <SchoolTwoToneIcon></SchoolTwoToneIcon> Estudiante en Tecnicatura en programacion
                   </Typography>
 
                 </CardContent>
+                
                 <CardActions>
                   <Button vartian="contained" className={classes.pdfButton}>
                     <a href={Cv} download>
@@ -47,7 +48,13 @@ const About = ({title,id, gray}) => {
                     
                     </Button>
                 </CardActions>
+                
               </Card>
+              <Typography variant="h9" className={classes.datos} >
+                    <WhatsAppIcon></WhatsAppIcon> 3512504207<br></br>
+                    <InstagramIcon></InstagramIcon> Ezemedinaaa <br></br>
+                    <SchoolTwoToneIcon></SchoolTwoToneIcon> Estudiante en Tecnicatura en programacion
+                  </Typography>
             </div>
         </div>
     )
@@ -76,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(6),
       position: "relative",
       background:"#f2f2f2",
-      marginBottom: 70,
+      marginBottom: 40,
     },
     cardphoto:{
       height: "auto",
@@ -132,6 +139,20 @@ const useStyles = makeStyles((theme) => ({
     titulo:{
       textShadow: "6px 5px 10px #555"
     },
+    datos:{
+      display: "none",
+      [theme.breakpoints.down("sm")]:{
+        display: "flex",
+               
+        alignItems:"center",
+        justifyContent: "center",
+        flexDirection: "column",
+        textAlign: "center",
+        marginBottom: 40
+        
+      },
+
+    }
 
 
    
