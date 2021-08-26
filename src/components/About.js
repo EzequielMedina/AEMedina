@@ -148,7 +148,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         flexDirection: "column",
         textAlign: "center",
-        marginBottom: 40
+       
         
       },
 
