@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, makeStyles, Typography, CardMedia, CardContent, CardActions, Button, Divider } from '@material-ui/core';
+import { Card, makeStyles, Typography, CardMedia, CardContent, CardActions, Button } from '@material-ui/core';
 import ezequiel from "../img/yo_adobespark.png";
 import TypeWriterEffect from "react-typewriter-effect";
 import Cv from "../assents/Medina_Ezequiel_CV_2020.pdf";

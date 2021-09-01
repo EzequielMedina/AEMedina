@@ -4,9 +4,8 @@ import Contact from "./components/Contact";
 import HomePage from "./components/HomePage";
 import Navbar from"./components/Navbar";
 import Portafile from "./components/Portafile";
-
-
 import Skills from "./components/Skills";
+
 
 function App() {
   const classes = useStyles();
